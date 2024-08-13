@@ -12,16 +12,7 @@ const Quiz = ({ questions }) => {
 
   const { question, choices, correctAnswer } = questions[currentQuestion]
 
-  const onAnswerClick = (answer, index) => {
-    setAnswerIdx(index)
-    if (answer === correctAnswer) {
-      setAnswer(true)
-      e.target.classList.add("correct")
-    } else {
-      setAnswer(false)
-      e.target.classList.add("wrong")
-    }
-  }
+
   const onClickNext = (finalAnswer) => {
     setAnswerIdx(null)
     setShowAnswerTimer(false)
